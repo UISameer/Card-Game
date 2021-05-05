@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,29 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BPH-sA-glx" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="825"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BPH-sA-glx" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="16" y="147.5" width="382" height="611"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="bAo-gn-A4s"/>
+                                    <constraint firstAttribute="width" secondItem="BPH-sA-glx" secondAttribute="height" multiplier="5:8" id="kfN-8u-lsc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99705451726913452" green="0.79439368005949373" blue="0.45802673848904779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="BPH-sA-glx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KxJ-Zw-sBO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPH-sA-glx" secondAttribute="trailing" constant="20" id="LhP-iN-YjJ"/>
-                            <constraint firstItem="BPH-sA-glx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rj5-sZ-Z0u"/>
-                            <constraint firstItem="BPH-sA-glx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="7" id="p4d-Zz-0e0"/>
+                            <constraint firstItem="BPH-sA-glx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0CG-sw-qYY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BPH-sA-glx" secondAttribute="bottom" constant="16" id="381-pq-dys"/>
+                            <constraint firstItem="BPH-sA-glx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="df0-ih-zgE"/>
+                            <constraint firstItem="BPH-sA-glx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gn3-nQ-4zR"/>
+                            <constraint firstItem="BPH-sA-glx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hUT-Hf-8Kp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BPH-sA-glx" secondAttribute="trailing" constant="16" id="t2O-tN-yCw"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="21.428571428571427"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
